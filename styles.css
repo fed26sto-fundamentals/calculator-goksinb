@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: solid 2px gold;
+}
+
+#display {
+  padding: 20px;
+}
+
+#display p {
+  font-size: 35px;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.number-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
+
+.operator-buttons-container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px;
+}
+
+button {
+  height: 90px;
+  width: 85px;
+  border: none;
+  font-size: 1.5em;
+  background-color: #f4efef;
+  color: #333;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+button:active {
+  background-color: #e0e0e0;
+}
